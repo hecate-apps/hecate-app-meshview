@@ -1,0 +1,11 @@
+.git
+.github
+*.md
+LICENSE
+scripts/
+
+# Build artifacts
+hecate-app-meshviewd/_build/
+hecate-app-meshvieww/node_modules/
+hecate-app-meshvieww/dist/
+hecate-app-meshvieww/.svelte-kit/

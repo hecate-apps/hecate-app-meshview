@@ -1,0 +1,24 @@
+{application, hecate_app_meshviewd, [
+    {description, "Hecate MeshView - Macula Mesh Observation Daemon"},
+    {vsn, "0.1.0"},
+    {registered, [hecate_app_meshviewd_sup, mesh_observer]},
+    {mod, {hecate_app_meshviewd_app, []}},
+    {applications, [
+        kernel,
+        stdlib,
+        crypto,
+        ssl,
+        inets,
+        cowboy
+    ]},
+    {env, [
+        {data_dir, "~/.hecate/hecate-app-meshviewd"},
+        {api_socket_name, "api.sock"},
+        {poll_interval_ms, 10000}
+    ]},
+    {modules, []},
+    {licenses, ["Apache-2.0"]},
+    {links, [
+        {"GitHub", "https://github.com/hecate-apps/hecate-app-meshview"}
+    ]}
+]}.
