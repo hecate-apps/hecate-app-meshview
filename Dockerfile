@@ -30,6 +30,9 @@ COPY hecate-app-meshviewd/config/ config/
 # Copy source files
 COPY hecate-app-meshviewd/src/ src/
 
+# Copy manifest into priv/ for runtime access
+COPY manifest.json priv/manifest.json
+
 # Fetch dependencies and compile
 RUN rebar3 get-deps && rebar3 compile
 

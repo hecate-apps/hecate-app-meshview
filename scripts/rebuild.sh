@@ -18,6 +18,10 @@ mkdir -p "$PRIV_STATIC"
 cp "$REPO_ROOT/hecate-app-meshvieww/dist/component.js" "$PRIV_STATIC/component.js"
 
 echo ""
+echo "=== Syncing manifest.json to priv ==="
+cp "$REPO_ROOT/manifest.json" "$REPO_ROOT/hecate-app-meshviewd/priv/manifest.json"
+
+echo ""
 echo "=== Compiling daemon ==="
 (cd "$REPO_ROOT/hecate-app-meshviewd" && rebar3 compile)
 
