@@ -15,7 +15,7 @@
     "tags": "mesh,network,monitoring,observation",
     "license_type": "free",
     "fee_cents": 0,
-    "fee_currency": "USD",
+    "fee_currency": "EUR",
     "node_limit": 0,
     "oci_image": "ghcr.io/hecate-apps/hecate-app-meshviewd",
     "min_daemon_version": "0.14.0"
